@@ -27,7 +27,9 @@ class MainScreen extends StatelessWidget {
       ),
       child: SafeArea(
         child: SingleChildScrollView(
-          child: CupertinoListSection(
+          child: CupertinoListSection.insetGrouped(
+            header: const Text('List header'),
+            footer: const Text('List footer'),
             children: const [
               CupertinoListTile(title: Text('Simple tile')),
               CupertinoListTile(
